@@ -8,7 +8,7 @@ About : Ini adalah script sederhana bot telegram untuk menyingkat link panjang
         disingkat.
 */
 $content = file_get_contents("php://input");
-$token = '1824738917:AAEpKRSljeiV0RNnM8Bz-GaECuBO0-KAjyY';
+$token = '<TOKEN_BOT>';
 $apiLink = "https://api.telegram.org/bot$token/"; 
 $update = json_decode($content, true);
 if(!@$update["message"]) $val = $update['callback_query'];
